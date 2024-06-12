@@ -19,7 +19,6 @@ blog_researcher = Agent(
     backstory=(
         "Expert in understanding the video content related to the machine learning data science and generative ai"
     ),
-    llm=llm,
     tools=[tool],
     allow_delegation=True # it means that we are trasfering our work to next level
 )
@@ -38,7 +37,6 @@ blog_writer = Agent(
         in an accessible manner.
         """
     ),
-    llm=llm,
     tools=[tool],
     allow_delegation=False
 )
